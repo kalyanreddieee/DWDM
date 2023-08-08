@@ -1,0 +1,7 @@
+x<-c(151,174,182,138,129,193,204,184,196)
+y<-c(63,45,29,76,94,36,49,54,69)
+relation <- lm(y~x)
+png(file="linearregression.png")
+plot(y,x,col="blue",main="Height and weight",abline(lm(x~y))
+     ,cex=1.3,pch=16,xlab="Weight in kg",ylab="Height in cm")
+dev.off()
